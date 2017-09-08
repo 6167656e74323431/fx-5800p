@@ -1,0 +1,4 @@
+Lbl 1
+Cls
+Locate 1,1,"0"
+Cls
