@@ -1,0 +1,139 @@
+Lbl 1
+Cls
+Locate 1,1,"0"
+Cls
+Locate 1,1,"00"
+Locate 1,2,"0"
+Cls
+Locate 1,1," 00"
+Locate 1,2,"00"
+Locate 1,2,"0"
+Cls
+Locate 1,1,"  0"
+Locate 1,2," 00"
+Locate 1,3,"00"
+Cls
+Locate 1,2,"  0"
+Locate 1,3," 00"
+Cls
+Loacate 1,3,"  0"
+Cls
+0->A
+0->B
+0->C
+0->D
+0->E
+0->F
+0->G
+0->H
+0->I
+1->X
+X->O
+X->Z
+Lbl 1
+Cls
+Locate 1,4,Z
+Locate 3,4,"TURN!"
+Locate 1,1,A
+Locate 2,1,B
+Locate 3,1,C
+Locate 1,2,D
+Locate 2,2,E
+Locate 3,2,F
+Locate 1,3,G
+Locate 2,3,H
+Locate 3,3,I
+Lbl 3
+Do
+Getkey=31=>Goto A
+Getkey=32=>Goto B
+Getkey=33=>Goto C
+Getkey=21=>Goto D
+Getkey=22=>Goto E
+Getkey=23=>Goto F
+Getkey=35=>Goto G
+Getkey=36=>Goto H
+Getkey=37=>Goto I
+LpWhile 1=1
+Lbl A
+If A=0:Then Z->A
+Goto 4
+Else Goto 3
+IfEnd
+Lbl B
+If B=0:Then Z->B
+Goto 4
+Else Goto 3
+IfEnd
+Lbl C
+If C=0:Then Z->C
+Goto 4
+Else Goto 3
+IfEnd
+Lbl D
+If D=0:Then Z->D
+Goto 4
+Else Goto 3
+IfEnd
+Lbl E
+If E=0:Then Z->E
+Goto 4
+Else Goto 3
+IfEnd
+Lbl F
+If F=0:Then Z->F
+Goto 4
+Else Goto 3
+IfEnd
+Lbl G
+If G=0:Then Z->G
+Goto 4
+Else Goto 3
+IfEnd
+Lbl H
+If H=0:Then Z->H
+Goto 4
+Else Goto 3
+IfEnd
+Lbl I
+If I=0:Then Z->I
+Goto 4
+Else Goto 3
+IfEnd
+Lbl Z
+If A=/=0 And B=/=0 And C=/=0 And D=/=0 And E=/=0 And F=/=0 And G=/=0 And H=/=0 And I=/=0:Then Goto 8
+Else Goto Y
+IfEnd
+Lbl 4
+If (A=Z And B=Z And C=Z) Or (D=Z And E=Z And F=Z) Or (G=Z And H=Z And I=Z) Or (A=Z And D=Z And G=Z) Or (B=Z And E=Z And H=Z) Or (C=Z And F=Z And I=Z) Or (A=Z And E=Z And I=Z) Or (C=Z And E=Z And G=Z):Then Goto 5
+Else Goto Z
+Lbl Y
+If Z=1:Then 2->Z
+Else 1->Z
+IfEnd
+Goto 2
+IfEnd
+Cls
+Locate 1,1,"TIE GAME!"
+Goto 9
+Lbl 5
+Locate 1,1,Z
+Locate 2,1," WINS!"
+Lbl 9
+Locate 1,2,"1:NEW GAME!"
+Locate 1,3,"2:CLOSE"
+Locate 1,4,"           "
+Do
+Getkey=35=>Goto 6
+Getkey=36=>Goto 7
+LpWhile 1=1
+Lbl 6
+Goto 1
+Lbl 7
+Cls
+Locate 1,1,"THANKS FOR"
+Locate 1,2,"PLAYING!"
+2->X
+For 1->P To 100:X=P->X
+Next
+Cls
