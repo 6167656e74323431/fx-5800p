@@ -1,1 +1,1 @@
-# Tic Tac Toe Implementation for the casio 5800p
+# Tic Tac Toe Implementation for the casio fx-5800p

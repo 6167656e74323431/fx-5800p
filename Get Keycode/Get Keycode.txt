@@ -1,0 +1,10 @@
+"  GET KEYCODE"
+Locate 6,3,"HIT ANY KEY"
+Locate 8,4,"<AC>:QUIT"
+Lbl 0
+Do
+Getkey->K
+LpWhile K=0
+Locate 1,1,"KEYCODE =    "
+Locate 11,1,K
+Goto 0

@@ -1,1 +1,1 @@
-# RPN Implementation for the casio 5800p
+# RPN Implementation for the casio fx-5800p
