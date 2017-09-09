@@ -11,14 +11,14 @@ Getkey->G
 WhileEnd
 If G=34
 Then 1->S:If N=0:Then 0->A
-Else A/10-Frac(A/10)->A:IfEnd
+Else A / 10 - Frac(A / 10)->A:IfEnd
 IfEnd
 If G=25 Or G=26 Or G=35 Or G=36 Or G=37 Or G=21 Or G=22 Or G=23 Or G=31 Or G=32 Or G=33
-Then 1->N:If S=0:Then C->D:B->D:A->B:0->A:IfEnd
+Then 1->:If S=1:Then C->D:B->D:A->B:0->A:0->S:IfEnd
 If G=26:Then -1->R:Else If A=0:Then Locate 2,4,"."
 Else Locate log(A),4,".":IfEnd
 If R=0 
-Then If G=25:Then A*10->A:IfEnd
+Then If G=25:Then A * 10->A:IfEnd
 If G=35:Then A*10+1->A:IfEnd
 If G=36:Then A*10+2->A:IfEnd
 If G=37:Then A*10+3->A:IfEnd
@@ -28,7 +28,7 @@ If G=23:Then A*10+6->A:IfEnd
 If G=31:Then A*10+7->A:IfEnd
 If G=32:Then A*10+8->A:IfEnd
 If G=33:Then A*10+9->A:IfEnd
-IfEnd:If R<0:Then
+IfEnd: If R<0:Then
 If G=35:Then A+1*10^R->A:R-1->R:IfEnd
 If G=36:Then A+2*10^R->A:R-1->R:IfEnd
 If G=37:Then A+3*10^R->A:R-1->R:IfEnd
