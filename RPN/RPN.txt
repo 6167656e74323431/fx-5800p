@@ -17,7 +17,7 @@ Then If S=0 Then C->D:B->D:A->B:0->A:IfEnd
 If G=26:Then -1->R:Else If A=0:Then Locate 2,4,"."
 Else Locate log(A),4,".":IfEnd
 If R=0 
-Then If G=25 Then A * 10->A:IfEnd
+Then If G=25:Then A * 10->A:IfEnd
 If G=35:Then A * 10 + 1->A:IfEnd
 If G=36:Then A * 10 + 2->A:IfEnd
 If G=37:Then A * 10 + 3->A:IfEnd
@@ -27,15 +27,15 @@ If G=23:Then A * 10 + 6->A:IfEnd
 If G=31:Then A * 10 + 7->A:IfEnd
 If G=32:Then A * 10 + 8->A:IfEnd
 If G=33:Then A * 10 + 9->A:IfEnd
-IfEnd: If R=1 Then
-If G=35 Then A + 1 * 10 ^ R->A:R-1->R:IfEnd
-If G=36 Then A + 2 * 10 ^ R->A:R-1->R:IfEnd
-If G=37 Then A + 3 * 10 ^ R->A:R-1->R:IfEnd
-If G=21 Then A + 4 * 10 ^ R->A:R-1->R:IfEnd
-If G=22 Then A + 5 * 10 ^ R->A:R-1->R:IfEnd
-If G=23 Then A + 6 * 10 ^ R->A:R-1->R:IfEnd
-If G=31 Then A + 7 * 10 ^ R->A:R-1->R:IfEnd
-If G=32 Then A + 8 * 10 ^ R->A:R-1->R:IfEnd
-If G=33 Then A + 9 * 10 ^ R->A:R-1->R:IfEnd
+IfEnd: If R=1:Then
+If G=35:Then A + 1 * 10 ^ R->A:R-1->R:IfEnd
+If G=36:Then A + 2 * 10 ^ R->A:R-1->R:IfEnd
+If G=37:Then A + 3 * 10 ^ R->A:R-1->R:IfEnd
+If G=21:Then A + 4 * 10 ^ R->A:R-1->R:IfEnd
+If G=22:Then A + 5 * 10 ^ R->A:R-1->R:IfEnd
+If G=23:Then A + 6 * 10 ^ R->A:R-1->R:IfEnd
+If G=31:Then A + 7 * 10 ^ R->A:R-1->R:IfEnd
+If G=32:Then A + 8 * 10 ^ R->A:R-1->R:IfEnd
+If G=33:Then A + 9 * 10 ^ R->A:R-1->R:IfEnd
 IfEnd
 WhileEnd
