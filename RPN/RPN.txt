@@ -12,3 +12,6 @@ If G=34
 Then If N=0:Then 0->A
 Else A/10-Frac(A/10)->A:IfEnd
 IfEnd
+Else If G=25 Or G=26 Or G=35 Or G=36 Or G=37 Or G=21 Or G=22 Or G=23 Or G=31 Or G=32 Or G=33
+Then If S=1
+WhileEnd
