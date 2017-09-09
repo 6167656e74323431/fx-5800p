@@ -27,7 +27,7 @@ If G=23:Then A*10+6->A:IfEnd
 If G=31:Then A*10+7->A:IfEnd
 If G=32:Then A*10+8->A:IfEnd
 If G=33:Then A*10+9->A:IfEnd
-IfEnd: If R=1:Then
+IfEnd: If R<0:Then
 If G=35:Then A+1*10^R->A:R-1->R:IfEnd
 If G=36:Then A+2*10^R->A:R-1->R:IfEnd
 If G=37:Then A+3*10^R->A:R-1->R:IfEnd
