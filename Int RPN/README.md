@@ -4,7 +4,7 @@
 
 This implemtation only supports integers, if there are any numbers after the decomal point they will be rounded down
 
-#### Special Buttons
+### Special Buttons
 * EXIT - Closes Program
 * RCL - AC
 * S<=>D - C
