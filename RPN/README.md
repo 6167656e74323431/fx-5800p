@@ -1,3 +1,3 @@
-# RPN Implementation for the casio fx-5800p
+# RPN Implementation for the casio fx-5800
 
-Not in a usable state
+Able to display registers and clear current register
