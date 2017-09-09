@@ -1,6 +1,7 @@
 ClrMemory
 Locate 16,2,"R":Locate 16,3,"P":Locate 16,4,"N"
 While 1=1
+0->G
 Locate 1,4,A
 Locate 1,3,B
 Locate 1,2,C
