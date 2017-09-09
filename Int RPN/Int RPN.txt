@@ -59,16 +59,6 @@ Else If G=21
 Then A*10+4->A
 Else If G=22
 Then A*10+5->A
-Else If G=23
-Then A*10+6->A
-Else If G=31
-Then A*10+7->A
-Else If G=32
-Then A*10+8->A
-Else If G=33
-Then A*10+9->A
-IfEnd:IfEnd
-IfEnd:IfEnd
 IfEnd:IfEnd
 IfEnd:IfEnd
 IfEnd:IfEnd
@@ -80,5 +70,15 @@ IfEnd:IfEnd
 IfEnd:IfEnd
 IfEnd:IfEnd
 IfEnd
+If G=23
+Then A*10+6->A
+Else If G=31
+Then A*10+7->A
+Else If G=32
+Then A*10+8->A
+Else If G=33
+Then A*10+9->A
+IfEnd:IfEnd
+IfEnd:IfEnd
 If Y=0:Then Goto 0
 Else Cls:IfEnd
