@@ -1,7 +1,7 @@
 ClrMemory
 Locate 16,2,"R":Locate 16,3,"P":Locate 16,4,"N"
 While 1=1
-0->G
+0->G:0->N
 Locate 1,4,A
 Locate 1,3,B
 Locate 1,2,C
@@ -10,11 +10,11 @@ While G=0
 Getkey->G
 WhileEnd
 If G=34
-Then If N=0:Then 0->A
+Then If N=0:Then 0->A:
 Else A / 10 - Frac(A / 10)->A:IfEnd
 IfEnd
 If G=25 Or G=26 Or G=35 Or G=36 Or G=37 Or G=21 Or G=22 Or G=23 Or G=31 Or G=32 Or G=33
-Then If S=0 Then C->D:B->D:A->B:0->A:IfEnd
+Then N=1:If S=0 Then C->D:B->D:A->B:0->A:IfEnd
 If G=26:Then -1->R:Else If A=0:Then Locate 2,4,"."
 Else Locate log(A),4,".":IfEnd
 If R=0 
