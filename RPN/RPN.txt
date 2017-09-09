@@ -39,4 +39,5 @@ If G=31:Then A+7*10^R->A:R-1->R:IfEnd
 If G=32:Then A+8*10^R->A:R-1->R:IfEnd
 If G=33:Then A+9*10^R->A:R-1->R:IfEnd
 IfEnd
+If G=73:Then Stop:IfEnd
 WhileEnd
